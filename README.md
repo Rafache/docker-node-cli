@@ -1,11 +1,11 @@
-# Gulp with Docker
+# Node with Docker
 
-Docker image to run Gulp.
+Docker image to run nodeJs.
 
 ## Usage
 
 ```bash
-docker run --rm -it -v /path/to/project/:/data rafache/gulp:latest
+docker run --rm -v /path/to/project/:/data rafache/node gulp
 ```
 
 ## License
