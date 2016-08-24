@@ -7,7 +7,7 @@ Docker image to run :
 ## Usage
 
 ```bash
-docker run --rm -v /path/to/project/:/data rafache/nod-tools gulp
+docker run --rm -v /path/to/project/:/data rafache/node-tools gulp
 ```
 
 ## License
