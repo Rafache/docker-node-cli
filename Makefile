@@ -1,5 +1,5 @@
 build:
-	docker build -t rafache/node-tools .
+	docker build -t rafache/node-cli .
 
 check:
-	docker run --rm rafache/node-tools npm -v
+	docker run --rm rafache/node-cli npm -v

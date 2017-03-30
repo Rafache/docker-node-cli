@@ -19,7 +19,7 @@ make check
 ## Run
 
 ```bash
-docker run --rm -v /path/to/project/:/data -v ~/.ssh:/root/.ssh:ro rafache/node-tools npm -v
-docker run --rm -v /path/to/project/:/data -v ~/.ssh:/root/.ssh:ro rafache/node-tools bower
-docker run --rm -v /path/to/project/:/data -v ~/.ssh:/root/.ssh:ro rafache/node-tools gulp
+docker run --rm -v /path/to/project/:/data -v ~/.ssh:/root/.ssh:ro rafache/node-cli npm -v
+docker run --rm -v /path/to/project/:/data -v ~/.ssh:/root/.ssh:ro rafache/node-cli bower
+docker run --rm -v /path/to/project/:/data -v ~/.ssh:/root/.ssh:ro rafache/node-cli gulp
 ```
