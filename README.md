@@ -2,14 +2,24 @@
 
 Docker image to run :
 - npm
-- gulp
+- gulp-cli
+- bower
 
-## Usage
+## Build
 
 ```bash
-docker run --rm -v /path/to/project/:/data rafache/node-tools gulp
+make
 ```
 
-## License
+## Check (display version)
+```bash
+make check
+```
 
-MIT: http://mit-license.org
+## Run
+
+```bash
+docker run --rm -v /path/to/project/:/data -v ~/.ssh:/root/.ssh:ro rafache/node-tools npm -v
+docker run --rm -v /path/to/project/:/data -v ~/.ssh:/root/.ssh:ro rafache/node-tools bower
+docker run --rm -v /path/to/project/:/data -v ~/.ssh:/root/.ssh:ro rafache/node-tools gulp
+```
