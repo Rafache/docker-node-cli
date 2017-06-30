@@ -27,5 +27,5 @@ alias gulp='docker run -it --rm -v "$PWD":"$PWD" -w "$PWD" registry.gitlab.com/r
 alias grunt='docker run -it --rm -v "$PWD":"$PWD" -w "$PWD" registry.gitlab.com/rafache/docker/node-cli:master grunt'
 alias npm='docker run -it --rm -v "$PWD":"$PWD" -w "$PWD" registry.gitlab.com/rafache/docker/node-cli:master npm'
 alias bower='docker run -it --rm -v "$PWD":"$PWD" -w "$PWD" registry.gitlab.com/rafache/docker/node-cli:master bower --allow-root'
-alias vue='docker run -it --rm -v "$PWD":"$PWD" -w "$PWD" registry.gitlab.com/rafache/docker/node-cli:master vue vue'
+alias vue='docker run -it --rm -v "$PWD":"$PWD" -w "$PWD" registry.gitlab.com/rafache/docker/node-cli:master vue'
 ```
