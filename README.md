@@ -5,6 +5,7 @@ Docker image to run :
 - gulp-cli
 - bower
 - grunt
+- vue-cli
 
 ## Build
 
@@ -19,9 +20,12 @@ make check
 
 ## Run
 
+In your .bashrc, .zshrc, or similar file include aliases for the following commands:
+
 ```bash
-docker run --rm -v /path/to/project/:/data -v ~/.ssh:/root/.ssh:ro rafache/node-cli npm -v
-docker run --rm -v /path/to/project/:/data -v ~/.ssh:/root/.ssh:ro rafache/node-cli bower
-docker run --rm -v /path/to/project/:/data -v ~/.ssh:/root/.ssh:ro rafache/node-cli gulp
-docker run --rm -v /path/to/project/:/data -v ~/.ssh:/root/.ssh:ro rafache/node-cli grunt
+alias gulp='docker run -it --rm -v "$PWD":"$PWD" -w "$PWD" registry.gitlab.com/rafache/docker/node-cli:master gulp'
+alias grunt='docker run -it --rm -v "$PWD":"$PWD" -w "$PWD" registry.gitlab.com/rafache/docker/node-cli:master grunt'
+alias npm='docker run -it --rm -v "$PWD":"$PWD" -w "$PWD" registry.gitlab.com/rafache/docker/node-cli:master npm'
+alias bower='docker run -it --rm -v "$PWD":"$PWD" -w "$PWD" registry.gitlab.com/rafache/docker/node-cli:master bower --allow-root'
+alias vue='docker run -it --rm -v "$PWD":"$PWD" -w "$PWD" registry.gitlab.com/rafache/docker/node-cli:master vue vue'
 ```
