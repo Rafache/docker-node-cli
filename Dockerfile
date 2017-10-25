@@ -9,6 +9,7 @@ RUN npm install --quiet --global \
     bower \
     grunt \
     vue-cli \
-    less
+    less \
+    less-plugin-clean-css
 
 WORKDIR /data
