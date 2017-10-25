@@ -8,6 +8,7 @@ RUN npm install --quiet --global \
     gulp-cli \
     bower \
     grunt \
-    vue-cli
+    vue-cli \
+    less
 
 WORKDIR /data
