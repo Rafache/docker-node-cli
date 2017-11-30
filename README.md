@@ -5,22 +5,10 @@ Docker image to run :
 - gulp-cli
 - bower
 - grunt
-- vue-cli
+- vue
 
-## Build
-
-```bash
-make
-```
-
-## Check (display version)
-```bash
-make check
-```
 
 ## Run
-
-In your .bashrc, .zshrc, or similar file include aliases for the following commands:
 
 ```bash
 alias gulp='docker run -it --rm -v "$PWD":"$PWD" -w "$PWD" registry.gitlab.com/rafache/docker/node-cli:master gulp'
