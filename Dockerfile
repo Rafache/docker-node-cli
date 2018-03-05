@@ -6,7 +6,6 @@ RUN apk update && apk upgrade && apk add --no-cache git yarn
 
 RUN npm install --quiet --global \
     gulp-cli \
-    bower \
     grunt \
     vue-cli \
     less \
