@@ -1,0 +1,21 @@
+name: Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Login to docker.pkg.github.com
+      run: echo ${{ secrets.GITHUB_TOKEN }} | docker login docker.pkg.github.com -u $GITHUB_ACTOR --password-stdin
+
+    - name: Build production image
+      run: docker build -t docker.pkg.github.com/rafache/docker-node-cli/docker-node-cli:latest .
+
+    - name: Push image to Registry
+      run: docker push docker.pkg.github.com/rafache/docker-node-cli/docker-node-cli:latest
