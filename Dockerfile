@@ -9,6 +9,7 @@ RUN npm install --quiet --global \
     grunt \
     vue-cli \
     less \
-    less-plugin-clean-css
+    less-plugin-clean-css \
+    npx
     
 WORKDIR /data
