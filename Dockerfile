@@ -2,7 +2,7 @@ FROM node:12
 
 MAINTAINER Rafache
 
-RUN apk update && apk upgrade && apk add --no-cache git yarn
+#RUN apk update && apk upgrade && apk add --no-cache git yarn
 
 RUN npm install --quiet --global --force \
     gulp-cli \
