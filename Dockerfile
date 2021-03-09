@@ -1,4 +1,4 @@
-FROM node:14
+FROM node:15
 
 MAINTAINER Rafache
 
@@ -10,7 +10,6 @@ RUN npm install --quiet --global --force \
     vue-cli \
     less \
     less-plugin-clean-css \
-    npx \
-    create-react-native-app
+    npx
 
 WORKDIR /data
