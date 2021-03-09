@@ -12,6 +12,7 @@ RUN npm install --quiet --global --force \
     less-plugin-clean-css \
     npx \
     create-react-app \
-    create-react-native-app
+    create-react-native-app \
+    expo-cli
 
 WORKDIR /data
