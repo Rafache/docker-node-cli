@@ -11,6 +11,7 @@ RUN npm install --quiet --global --force \
     less \
     less-plugin-clean-css \
     npx \
-    create-react-app
+    create-react-app \
+    create-react-native-app
 
 WORKDIR /data
