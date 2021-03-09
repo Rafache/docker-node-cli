@@ -10,6 +10,7 @@ RUN npm install --quiet --global --force \
     vue-cli \
     less \
     less-plugin-clean-css \
-    npx
+    npx \
+    create-react-native-app my-project
 
 WORKDIR /data
