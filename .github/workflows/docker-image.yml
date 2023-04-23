@@ -14,14 +14,11 @@ jobs:
       - name: Log in to the Container registry
         uses: docker/login-action@v2
         with:
-          registry: docker.pkg.github.com
+          registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push Docker image
-        uses: docker/build-push-action@v4
-        with:
-          context: .
-          file: ./Dockerfile
-          push: true
-          tags: docker.pkg.github.com/rafache/docker-node-cli:latest
+        run: |
+              docker build . --tag ghcr.io/rafache/docker-node-cli:latest
+              docker push ghcr.io/rafache/docker-node-cli:latest
