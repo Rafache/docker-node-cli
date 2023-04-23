@@ -24,4 +24,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: Rafache/docker-node-cli:latest
+          tags: rafache/docker-node-cli:latest
