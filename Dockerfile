@@ -1,8 +1,8 @@
-FROM node:15
+FROM node:19-alpine
 
 MAINTAINER Rafache
 
-#RUN apk update && apk upgrade && apk add --no-cache git yarn
+RUN wget -qO- https://get.pnpm.io/install.sh | ENV="$HOME/.shrc" SHELL="$(which sh)" sh -
 
 RUN npm install --quiet --global --force \
     gulp-cli \
