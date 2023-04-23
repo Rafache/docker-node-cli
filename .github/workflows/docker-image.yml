@@ -22,7 +22,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: docker.pkg.github.com/docker-node-cli:latest
+          images: docker.pkg.github.com/docker-node-cli
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
